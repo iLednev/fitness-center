@@ -1,0 +1,29 @@
+.banner-socials {
+  @include list-reset;
+
+  &__item {
+    text-align: right;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    & a {
+      color: $text-white;
+      font-family: $roboto;
+      font-size: 12px;
+      line-height: 14px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
