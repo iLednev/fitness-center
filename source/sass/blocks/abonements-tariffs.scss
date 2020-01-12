@@ -1,0 +1,48 @@
+.abonements-tariffs {
+  @include list-reset;
+  display: flex;
+  position: relative;
+  z-index: 1;
+
+  @include media-tablet {
+    flex-direction: column;
+  }
+
+  //&::before {
+  //  content: "";
+  //  position: absolute;
+  //  right: -239px;
+  //  bottom: -225px;
+  //  width: 470px;
+  //  height: 494px;
+  //  background-image: url("../img/bg-weight-plates-desktop@1x.png");
+  //  z-index: -1;
+  //
+  //  @media (min-resolution: 1.5dppx) {
+  //    background-image: url("../img/bg-weight-plates-desktop@2x.png");
+  //  }
+  //
+  //  @include media-tablet {
+  //    width: 423px;
+  //    height: 444px;
+  //    background-image: url("../img/bg-weight-plates-tablet@1x.png");
+  //
+  //    @media (min-resolution: 1.5dppx) {
+  //      background-image: url("../img/bg-weight-plates-tablet@2x.png");
+  //    }
+  //  }
+  //}
+
+  &__item:not(:last-child) {
+    margin-right: 40px;
+
+    @include media-tablet {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+
+    @include media-mobile {
+      margin-bottom: 35px;
+    }
+  }
+}

@@ -27,7 +27,7 @@
             </ul>
           </div>
           <p class="banner__city">Омск</p>
-          <a class="banner__link  button" href="subscription.html">Купить абонемент</a>
+          <a class="banner__link  button" href="#abonements">Купить абонемент</a>
         </div>
         <div class="banner__image">
           <picture>
@@ -98,6 +98,187 @@
       </div>
     </section>
 
+    <section class="abonements" id="abonements">
+      <div class="abonements__content content">
+        <h2 class="abonements__heading">Абонементы</h2>
+        <ul class="abonements__switches  abonements-switches">
+          <li class="abonements-switches__item">
+            <button class="abonements-switches__button  active" type="button">1 месяц</button>
+          </li>
+          <li class="abonements-switches__item">
+            <button class="abonements-switches__button" type="button">6 месяцев</button>
+          </li>
+          <li class="abonements-switches__item">
+            <button class="abonements-switches__button" type="button">12 месяцев</button>
+          </li>
+        </ul>
+
+        <ul class="abonements__tariffs  abonements-tariffs">
+          <li class="abonements-tariffs__item  tariff">
+            <h2 class="tariff__heading">С тренером</h2>
+            <p class="tariff__condition">12 занятий</p>
+            <p class="tariff__price" data-value="5000">5000 <span>&#8381;</span></p>
+            <a class="tariff__link  button" href="subscription.html">Купить абонемент</a>
+          </li>
+
+          <li class="abonements-tariffs__item  tariff">
+            <h2 class="tariff__heading">Дневной</h2>
+            <p class="tariff__condition">с 8:00 до 17:00</p>
+            <p class="tariff__price" data-value="1700">1700 <span>&#8381;</span></p>
+            <a class="tariff__link  button" href="subscription.html">Купить абонемент</a>
+          </li>
+
+          <li class="abonements-tariffs__item  tariff">
+            <h2 class="tariff__heading">Полный день</h2>
+            <p class="tariff__condition">с 8:00 до 22:00</p>
+            <p class="tariff__price" data-value="2700">2700 <span>&#8381;</span></p>
+            <a class="tariff__link  button" href="subscription.html">Купить абонемент</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="promo__content content">
+        <h2 class="visually-hidden">Ближайшее мероприятие</h2>
+        <article class="promo__event  event-card">
+          <div class="event-card__information">
+            <h3 class="event-card__heading" lang="en">Super Games</h3>
+            <table class="event-card__table  event-table">
+              <tbody class="event-table__body">
+                <tr class="event-table__row">
+                  <td class="event-table__key">Дата</td>
+                  <td class="event-table__value">
+                    <span>7</span>
+                    <span>Марта 2019</span>
+                  </td>
+                </tr>
+                <tr class="event-table__row">
+                  <td class="event-table__key">Время</td>
+                  <td class="event-table__value">12:00</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="event-card__lead">Ежегодные соревнования по <span lang="en">CrossFit</span></p>
+
+            <a class="event-card__link  button" href="event.html">Заполнить заявку</a>
+          </div>
+          <div class="event-card__image">
+            <picture>
+              <source type="image/webp" srcset="img/explode-mobile@1x.webp 1x, img/explode-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <source type="image/webp" srcset="img/explode-tablet@1x.webp 1x, img/explode-tablet@2x.webp 2x" media="(max-width: 1199px)">
+              <source type="image/webp" srcset="img/explode-desktop@1x.webp 1x, img/explode-desktop@2x.webp 2x">
+
+              <source srcset="img/explode-mobile@1x.jpg 1x, img/explode-mobile@2x.jpg 2x" media="(max-width: 767px)">
+              <source srcset="img/explode-tablet@1x.jpg 1x, img/explode-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+              <img src="img/explode-desktop@1x.jpg" srcset="img/explode-desktop@1x.jpg 1x, img/explode-desktop@2x.jpg 2x">
+            </picture>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="trainers">
+      <div class="trainers__content  content">
+        <h2 class="trainers__heading">Тренеры</h2>
+        <button class="trainers__arrow  trainers__arrow--left">
+          <span class="visually-hidden">Назад</span>
+        </button>
+        <button class="trainers__arrow  trainers__arrow--right">
+          <span class="visually-hidden">Вперёд</span>
+        </button>
+        <ul class="trainers__list">
+          <li class="trainers__item  trainer-card">
+            <h3 class="trainer-card__heading"></h3>
+            <div class="trainer-card__hidden">
+              <p class="trainer-card__company"></p>
+              <ul class="trainer-card__properties">
+                <li lang="en">Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
+                <li>Опыт — 6 лет</li>
+              </ul>
+            </div>
+            <div class="trainer-card__image">
+              <picture>
+                <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
+
+                <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+                <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
+              </picture>
+            </div>
+          </li>
+          <li class="trainers__item  trainer-card">
+            <h3 class="trainer-card__heading"></h3>
+            <div class="trainer-card__hidden">
+              <p class="trainer-card__company"></p>
+              <ul class="trainer-card__properties">
+                <li lang="en">Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
+                <li>Опыт — 6 лет</li>
+              </ul>
+            </div>
+            <div class="trainer-card__image">
+              <picture>
+                <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
+
+                <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+                <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
+              </picture>
+            </div>
+          </li>
+          <li class="trainers__item  trainer-card">
+            <h3 class="trainer-card__heading"></h3>
+            <div class="trainer-card__hidden">
+              <p class="trainer-card__company"></p>
+              <ul class="trainer-card__properties">
+                <li lang="en">Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
+                <li>Опыт — 6 лет</li>
+              </ul>
+            </div>
+            <div class="trainer-card__image">
+              <picture>
+                <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
+
+                <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+                <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
+              </picture>
+            </div>
+          </li>
+          <li class="trainers__item  trainer-card">
+            <h3 class="trainer-card__heading"></h3>
+            <div class="trainer-card__hidden">
+              <p class="trainer-card__company"></p>
+              <ul class="trainer-card__properties">
+                <li lang="en">Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
+                <li>Опыт — 6 лет</li>
+              </ul>
+            </div>
+            <div class="trainer-card__image">
+              <picture>
+                <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
+
+                <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+                <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
+              </picture>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
   <footer>
 

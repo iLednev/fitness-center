@@ -10,18 +10,18 @@
   }
 
   &__content {
-    margin-bottom: 235px;
+    margin-bottom: 231px;
 
     @include media-tablet {
       flex-direction: column;
       align-items: center;
-      margin-bottom: 183px;
+      margin-bottom: 179px;
     }
 
     @include media-mobile {
       padding-left: 0;
       padding-right: 0;
-      margin-bottom: 70px;
+      margin-bottom: 66px;
     }
   }
 
@@ -52,29 +52,18 @@
   }
 
   &__heading {
-    @include text-block-reset;
+    @include h2-heading;
     margin-bottom: 8px;
     min-width: 280px;
-    color: $main-dark-blue;
-    font-family: $bebas;
-    font-size: 49px;
-    font-weight: 700;
-    line-height: 49px;
-    letter-spacing: 1.5px;
 
     @include media-tablet {
       min-width: auto;
       width: 280px;
-      font-size: 42px;
-      line-height: 42px;
     }
 
     @include media-mobile {
       margin-bottom: 6px;
       width: 220px;
-      font-size: 32px;
-      line-height: 32px;
-      letter-spacing: 1px;
     }
   }
 
