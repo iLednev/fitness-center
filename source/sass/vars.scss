@@ -36,7 +36,7 @@ $bebas: "Bebas Neue", "Arial", sans-serif;
 }
 
 @mixin media-tablet {
-  @media (max-width: 1023px) {
+  @media (max-width: 1199px) {
     @content;
   }
 }
