@@ -15,6 +15,7 @@ img {
 
 .content {
   @include desktop-paddings;
+  display: flex;
   margin: 0 auto;
   max-width: 1366px;
   min-width: 1024px;

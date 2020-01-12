@@ -1,35 +1,33 @@
 .banner {
   padding-top: 51px;
-  background-image: url("../img/banner-bg-desktop@1x.jpg");
+  background-image: url("../img/bg-banner-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50%;
 
   @media (min-resolution: 1.5dppx) {
-    background-image: url("../img/banner-bg-desktop@2x.jpg");
+    background-image: url("../img/bg-banner-desktop@2x.jpg");
   }
 
   @include media-tablet {
     padding-top: 82px;
-    background-image: url("../img/banner-bg-tablet@1x.jpg");
+    background-image: url("../img/bg-banner-tablet@1x.jpg");
     background-position: 50% calc(50% - 3px);
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/banner-bg-tablet@2x.jpg");
+      background-image: url("../img/bg-banner-tablet@2x.jpg");
     }
   }
 
   @include media-mobile {
     padding-top: 112px;
-    background-image: url("../img/banner-bg-mobile@1x.jpg");
+    background-image: url("../img/bg-banner-mobile@1x.jpg");
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/banner-bg-tablet@2x.jpg");
+      background-image: url("../img/bg-banner-mobile@2x.jpg");
     }
   }
 
   &__content {
-    display: flex;
-
     @media (max-width: 1200px) {
       justify-content: center;
     }
