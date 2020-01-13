@@ -33,7 +33,11 @@
   //  }
   //}
 
-  &__item:not(:last-child) {
+  &.hidden {
+    display: none;
+  }
+
+  & li:not(:last-child) {
     margin-right: 40px;
 
     @include media-tablet {

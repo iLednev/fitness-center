@@ -1,0 +1,27 @@
+.banner-wrapper {
+  background-image: url("../img/superman-desktop@1x.jpg"), url("../img/bg-banner-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 130px) calc(50% - 2px), 50% calc(50% - 3px);
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/superman-desktop@2x.jpg"), url("../img/bg-banner-desktop@2x.jpg");
+  }
+
+  @include media-tablet {
+    background-image: url("../img/superman-tablet@1x.jpg"), url("../img/bg-banner-tablet@1x.jpg");
+    background-position: calc(50% + 177px) calc(50% - 2px), 50% calc(50% - 3px);
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/superman-tablet@2x.jpg"), url("../img/bg-banner-tablet@2x.jpg");
+    }
+  }
+
+  @include media-mobile {
+    background-image: url("../img/bg-banner-mobile@1x.jpg");
+    background-position: 50% calc(50% - 3px);
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-banner-mobile@2x.jpg");
+    }
+  }
+}

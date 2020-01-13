@@ -1,7 +1,7 @@
 .banner-socials {
   @include list-reset;
 
-  &__item {
+  & li {
     text-align: right;
 
     &:hover,

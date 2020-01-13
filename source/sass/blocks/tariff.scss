@@ -3,45 +3,59 @@
   flex-direction: column;
   align-items: center;
   padding-top: 63px;
+  padding-right: 76px;
+  padding-left: 76px;
+  padding-bottom: 67px;
   width: 360px;
   background-color: white;
 
   @include media-tablet {
+    padding-right: 117px;
+    padding-left: 117px;
     width: 442px;
   }
 
   @include media-mobile {
     padding-top: 52px;
+    padding-right: 41px;
+    padding-left: 41px;
+    padding-bottom: 54px;
     width: 290px;
   }
 
   &:hover,
   &:focus-within {
     padding-top: 56px;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 62px;
     border-width: 7px;
     border-style: solid;
     border-image-source: linear-gradient(143.02deg, #d10a42 0.85%, #00359f 100%);
     border-image-slice: 1;
 
+    @include media-tablet {
+      padding-right: 111px;
+      padding-left: 111px;
+    }
+
     @include media-mobile {
       padding-top: 45px;
+      padding-right: 35px;
+      padding-left: 35px;
+      padding-bottom: 49px;
     }
 
     & .tariff__link {
-      margin-bottom: 62px;
       width: 206px;
       height: 64px;
       border: none;
       background-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
       color: $text-white;
-
-      @include media-mobile {
-        margin-bottom: 49px;
-      }
     }
   }
 
-  &__heading {
+  & h3 {
     @include text-block-reset;
     margin-bottom: 10px;
     max-width: 180px;
@@ -50,6 +64,8 @@
     font-size: 26px;
     font-weight: 700;
     line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.5px;
 
     @include media-mobile {
       font-size: 22px;
@@ -57,64 +73,66 @@
     }
   }
 
-  &__condition {
+  & p {
     @include text-block-reset;
-    margin-bottom: 65px;
-    color: $gray;
-    font-family: $roboto;
-    font-size: 16px;
-    line-height: 24px;
 
-    @include media-mobile {
-      margin-bottom: 52px;
-    }
-  }
-
-  &__price {
-    @include text-block-reset;
-    position: relative;
-    margin-bottom: 34px;
-    color: $subscription-price;
-    font-family: $roboto;
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 90px;
-    z-index: 1;
-
-    @include media-mobile {
-      margin-bottom: 30px;
-      font-size: 48px;
-      line-height: 72px;
-    }
-
-    &::before {
-      content: attr(data-value);
-      position: absolute;
-      bottom: -5px;
-      left: 50%;
-      transform: translateX(-50%);
-      color: #e8e8e8;
+    &:first-of-type {
+      margin-bottom: 65px;
+      color: $gray;
       font-family: $roboto;
-      font-size: 100px;
-      font-weight: 700;
-      line-height: 150px;
-      opacity: 0.48;
-      z-index: -1;
+      font-size: 16px;
+      line-height: 24px;
 
       @include media-mobile {
-        font-size: 80px;
-        line-height: 120px;
+        margin-bottom: 52px;
       }
     }
 
-    & span {
-      color: $main-dark-blue;
+    &:last-of-type {
+      @include text-block-reset;
+      position: relative;
+      margin-bottom: 34px;
+      color: $subscription-price;
+      font-family: $roboto;
+      font-size: 60px;
       font-weight: 700;
+      line-height: 90px;
+      z-index: 1;
+
+      @include media-mobile {
+        margin-bottom: 30px;
+        font-size: 48px;
+        line-height: 72px;
+      }
+
+      &::before {
+        content: attr(data-value);
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #e8e8e8;
+        font-family: $roboto;
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 150px;
+        opacity: 0.48;
+        z-index: -1;
+
+        @include media-mobile {
+          font-size: 80px;
+          line-height: 120px;
+        }
+      }
+
+      & span {
+        color: $main-dark-blue;
+        font-weight: 700;
+      }
     }
   }
 
   &__link {
-    margin-bottom: 67px;
     width: 208px;
     height: 66px;
     color: $main-dark-blue;
@@ -122,9 +140,5 @@
     border-width: 2px;
     font-weight: 700;
     letter-spacing: 0.7px;
-
-    @include media-mobile {
-      margin-bottom: 54px;
-    }
   }
 }

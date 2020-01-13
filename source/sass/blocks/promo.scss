@@ -1,6 +1,17 @@
 .promo {
   &__content {
-    padding-top: 120px;
-    margin-bottom: 120px;
+    padding-top: 118px;
+    padding-bottom: 120px;
+
+    @include media-tablet {
+      justify-content: center;
+      padding-top: 102px;
+      padding-bottom: 98px;
+    }
+
+    @include media-mobile {
+      padding-top: 70px;
+      padding-bottom: 69px;
+    }
   }
 }

@@ -1,0 +1,95 @@
+.trainer-card {
+  width: 260px;
+  height: 294px;
+  cursor: pointer;
+
+  @include media-tablet {
+    width: 268px;
+  }
+
+  @include media-mobile {
+    width: 226px;
+    height: 274px;
+  }
+
+  &.visible:hover &__info,
+  &.visible:focus &__info {
+    justify-content: flex-start;
+    background-color: rgba(16, 38, 84, 0.89);
+
+    & .trainer-card__hidden {
+      display: flex;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    padding-top: 57px;
+    padding-right: 42px;
+    padding-left: 44px;
+    padding-bottom: 30px;
+    width: 260px;
+    height: 294px;
+
+    @include media-tablet {
+      width: 268px;
+    }
+
+    @include media-mobile {
+      padding-top: 46px;
+      padding-right: 30px;
+      padding-left: 31px;
+      width: 226px;
+      height: 274px;
+    }
+  }
+
+  & h3 {
+    @include text-block-reset;
+    margin-bottom: 4px;
+    color: $text-white;
+    font-family: $roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  &__hidden {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    color: $text-white;
+
+    & p {
+      @include text-block-reset;
+      margin-bottom: 37px;
+      color: #b6bdcc;
+      font-family: $roboto;
+      font-size: 16px;
+      line-height: 18px;
+      text-align: center;
+    }
+  }
+
+  &__properties {
+    @include list-reset;
+    display: flex;
+    flex-direction: column;
+    padding-left: 28px;
+    font-family: $roboto;
+    font-size: 14px;
+    line-height: 21px;
+
+    @include media-mobile {
+      padding-left: 20px;
+    }
+
+    & li {
+      margin-bottom: 13px;
+    }
+  }
+}

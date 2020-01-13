@@ -1,3 +1,105 @@
 .trainers {
+  &__content {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 120px;
 
+    @include media-tablet {
+      padding-bottom: 100px;
+    }
+
+    @include media-mobile {
+      padding-bottom: 70px;
+    }
+  }
+
+  & h2 {
+    @include h2-heading;
+    margin-bottom: 50px;
+
+    @include media-tablet {
+      margin-bottom: 40px;
+    }
+
+    @include media-mobile {
+      margin-bottom: 42px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: 132px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 18px;
+    height: 32px;
+    background: url("../img/svg/arrow.svg");
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+    @include media-mobile {
+      width: 14px;
+      height: 22px;
+      bottom: 126px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: rgba(196, 196, 196, 0.4);
+    }
+
+    &:active {
+      background-color: rgba(196, 196, 196, 0.7);
+    }
+
+    &:first-of-type {
+      left: -35px;
+      transform: rotate(180deg);
+    }
+
+    &:last-of-type {
+      right: -35px;
+    }
+  }
+
+  &__list {
+    @include list-reset;
+    display: flex;
+    width: 1160px;
+    overflow: hidden;
+
+    @media (max-width: 1365px) {
+      width: 860px;
+    }
+
+    @include media-tablet {
+      width: 864px;
+    }
+
+    @media (max-width: 1023px) {
+      width: 566px;
+    }
+
+    @include media-mobile {
+      width: 226px;
+    }
+
+    & > li {
+      flex-shrink: 0;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+
+        @include media-tablet {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
 }

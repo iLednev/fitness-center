@@ -1,13 +1,16 @@
 .abonements {
-  padding-top: 120px;
+  padding-top: 117px;
+  padding-bottom: 120px;
   background-color: #f8f9fc;
 
   @include media-tablet {
     padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   @include media-mobile {
-    padding-top: 70px;
+    padding-top: 73px;
+    padding-bottom: 70px;
   }
 
   &__content {
@@ -15,9 +18,9 @@
     align-items: center;
   }
 
-  &__heading {
+  & h2 {
     @include h2-heading;
-    margin-bottom: 33px;
+    margin-bottom: 36px;
     width: 226px;
 
     @include media-tablet {
@@ -39,15 +42,7 @@
     }
 
     @include media-mobile {
-      margin-bottom: 35px;
-    }
-  }
-
-  &__tariffs {
-    margin-bottom: 120px;
-
-    @include media-tablet {
-      margin-bottom: 100px;
+      margin-bottom: 34px;
     }
   }
 }

@@ -1,6 +1,36 @@
 .event-card {
   display: flex;
-  background-color: #ed0233;
+  background-color: #000145;
+  background-image: url("../img/explode-desktop@1x.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 1160px;
+
+  @media (min-resolution: 1.5dppx) {
+    background-size: cover;
+    background-image: url("../img/explode-desktop@2x.jpg");
+  }
+
+  @include media-tablet {
+    width: 678px;
+    background-image: url("../img/explode-tablet@1x.jpg");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/explode-tablet@2x.jpg");
+    }
+  }
+
+  @include media-mobile {
+    width: 290px;
+    min-height: 584px;
+    background-color: #ed0233;
+    background-image: url("../img/explode-mobile@1x.jpg");
+    background-position: bottom;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/explode-mobile@2x.jpg");
+    }
+  }
 
   &__information {
     display: flex;
@@ -8,13 +38,28 @@
     align-content: flex-start;
     flex-wrap: wrap;
     color: $text-white;
-    margin-right: 70px;
-    margin-bottom: 84px;
+    padding-right: 70px;
+    padding-bottom: 84px;
     padding-top: 83px;
     padding-left: 78px;
+    width: 500px;
+    background-color: #ed0233;
+
+    @include media-tablet {
+      padding-top: 48px;
+      padding-right: 43px;
+      padding-left: 45px;
+      padding-bottom: 51px;
+      width: 292px;
+    }
+
+    @include media-mobile {
+      padding-bottom: 343px;
+      background: none;
+    }
   }
 
-  &__heading {
+  & h3 {
     @include text-block-reset;
     margin-bottom: 10px;
     margin-right: 48px;
@@ -23,20 +68,42 @@
     font-size: 90px;
     line-height: 90px;
     letter-spacing: 3px;
+
+    @include media-tablet {
+      margin-bottom: 1px;
+      margin-right: 26px;
+      width: 118px;
+      font-size: 52px;
+      line-height: 52px;
+      letter-spacing: 2px;
+    }
   }
 
-  &__lead {
+  & p {
     @include text-block-reset;
     margin-bottom: 44px;
     font-family: $roboto;
     font-size: 18px;
     line-height: 27px;
     width: 280px;
+
+    @include media-tablet {
+      margin-bottom: 29px;
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
 
   &__link {
     width: 346px;
     height: 71px;
+
+    @include media-tablet {
+      height: 41px;
+      border-width: 2px;
+      font-size: 10px;
+      line-height: 12px;
+    }
   }
 
   &__image {
