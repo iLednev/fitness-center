@@ -1,7 +1,9 @@
 .trainer-card {
   width: 260px;
   height: 294px;
+  transition-duration: 0.4s;
   cursor: pointer;
+  transform: translateX(0);
 
   @include media-tablet {
     width: 268px;
@@ -10,16 +12,6 @@
   @include media-mobile {
     width: 226px;
     height: 274px;
-  }
-
-  &.visible:hover &__info,
-  &.visible:focus &__info {
-    justify-content: flex-start;
-    background-color: rgba(16, 38, 84, 0.89);
-
-    & .trainer-card__hidden {
-      display: flex;
-    }
   }
 
   &__info {
@@ -44,6 +36,16 @@
       padding-left: 31px;
       width: 226px;
       height: 274px;
+    }
+
+    &:hover,
+    &:focus {
+      justify-content: flex-start;
+      background-color: rgba(16, 38, 84, 0.89);
+
+      & .trainer-card__hidden {
+        display: flex;
+      }
     }
   }
 

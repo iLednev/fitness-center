@@ -5,16 +5,27 @@
     flex-direction: column;
     align-items: center;
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 114px;
+
+    @include media-tablet {
+      padding-top: 100px;
+    }
   }
 
   & h2 {
     @include h2-heading;
-    margin-bottom: 70px;
+    margin-bottom: 62px;
+
+    @include media-tablet {
+      margin-bottom: 42px;
+    }
   }
 
   &__list {
     @include list-reset;
-    display: flex;
+    position: relative;
+    display: grid;
+    grid-template-columns: 340px 240px 340px;
+    grid-column-gap: 30px;
   }
 }

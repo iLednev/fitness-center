@@ -190,110 +190,256 @@
     <section class="trainers">
       <div class="trainers__content  content">
         <h2>Тренеры</h2>
-        <div class="trainers__slider">
-          <button class="trainers__arrow  trainers__arrow--left">
-            <span class="visually-hidden">Назад</span>
-          </button>
-          <button class="trainers__arrow  trainers__arrow--right">
-            <span class="visually-hidden">Вперёд</span>
-          </button>
-          <ul class="trainers__list">
-            <li class="trainer-card  visible">
-              <div class="trainer-card__info">
-                <h3>Александр Пашков</h3>
-                <div class="trainer-card__hidden">
-                  <p lang="en">CrossFit</p>
-                  <ul class="trainer-card__properties">
-                    <li lang="en">Certified Level 3 Trainer</li>
-                    <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
-                    <li>Опыт — 6 лет</li>
-                  </ul>
+        <div class="trainers__slider-container">
+          <div class="js-slider-buttons">
+            <button class="trainers__arrow  trainers__arrow--left">
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="trainers__arrow  trainers__arrow--right">
+              <span class="visually-hidden">Вперёд</span>
+            </button>
+          </div>
+            <ul class="trainers__list">
+              <li class="trainer-card">
+                <div class="trainer-card__info">
+                  <h3>Александр Пашков</h3>
+                  <div class="trainer-card__hidden">
+                    <p lang="en">CrossFit</p>
+                    <ul class="trainer-card__properties">
+                      <li lang="en">Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="trainer-card__image">
-                <picture>
-                  <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
-                  <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
-                  <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
+                <div class="trainer-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
+                    <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                    <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
 
-                  <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
-                  <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
-                  <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
-                </picture>
-              </div>
-            </li>
-            <li class="trainer-card  visible">
-              <div class="trainer-card__info">
-                <h3>Александр Пашков</h3>
-                <div class="trainer-card__hidden">
-                  <p lang="en">CrossFit</p>
-                  <ul class="trainer-card__properties">
-                    <li lang="en">Certified Level 3 Trainer</li>
-                    <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
-                    <li>Опыт — 6 лет</li>
-                  </ul>
+                    <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+                    <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
+                  </picture>
                 </div>
-              </div>
-              <div class="trainer-card__image">
-                <picture>
-                  <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
-                  <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
-                  <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
-
-                  <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
-                  <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
-                  <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
-                </picture>
-              </div>
-            </li>
-            <li class="trainer-card  visible">
-              <div class="trainer-card__info">
-                <h3>Александр Пашков</h3>
-                <div class="trainer-card__hidden">
-                  <p lang="en">CrossFit</p>
-                  <ul class="trainer-card__properties">
-                    <li lang="en">Certified Level 3 Trainer</li>
-                    <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
-                    <li>Опыт — 6 лет</li>
-                  </ul>
+              </li>
+              <li class="trainer-card">
+                <div class="trainer-card__info">
+                  <h3>Александр Пашков</h3>
+                  <div class="trainer-card__hidden">
+                    <p lang="en">CrossFit</p>
+                    <ul class="trainer-card__properties">
+                      <li lang="en">Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="trainer-card__image">
-                <picture>
-                  <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
-                  <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
-                  <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
+                <div class="trainer-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
+                    <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                    <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
 
-                  <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
-                  <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
-                  <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
-                </picture>
-              </div>
-            </li>
-            <li class="trainer-card  visible">
-              <div class="trainer-card__info">
-                <h3>Александр Пашков</h3>
-                <div class="trainer-card__hidden">
-                  <p lang="en">CrossFit</p>
-                  <ul class="trainer-card__properties">
-                    <li lang="en">Certified Level 3 Trainer</li>
-                    <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
-                    <li>Опыт — 6 лет</li>
-                  </ul>
+                    <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+                    <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
+                  </picture>
                 </div>
-              </div>
-              <div class="trainer-card__image">
-                <picture>
-                  <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
-                  <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
-                  <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
+              </li>
+              <li class="trainer-card">
+                <div class="trainer-card__info">
+                  <h3>Александр Пашков</h3>
+                  <div class="trainer-card__hidden">
+                    <p lang="en">CrossFit</p>
+                    <ul class="trainer-card__properties">
+                      <li lang="en">Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="trainer-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
+                    <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                    <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
 
-                  <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
-                  <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
-                  <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
-                </picture>
-              </div>
-            </li>
+                    <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+                    <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
+                  </picture>
+                </div>
+              </li>
+              <li class="trainer-card">
+                <div class="trainer-card__info">
+                  <h3>Александр Пашков</h3>
+                  <div class="trainer-card__hidden">
+                    <p lang="en">CrossFit</p>
+                    <ul class="trainer-card__properties">
+                      <li lang="en">Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="trainer-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
+                    <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                    <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
+
+                    <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+                    <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
+                  </picture>
+                </div>
+              </li>
+              <li class="trainer-card">
+                <div class="trainer-card__info">
+                  <h3>Александр Пашков</h3>
+                  <div class="trainer-card__hidden">
+                    <p lang="en">CrossFit</p>
+                    <ul class="trainer-card__properties">
+                      <li lang="en">Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="trainer-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
+                    <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                    <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
+
+                    <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+                    <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
+                  </picture>
+                </div>
+              </li>
+              <li class="trainer-card">
+                <div class="trainer-card__info">
+                  <h3>Александр Пашков</h3>
+                  <div class="trainer-card__hidden">
+                    <p lang="en">CrossFit</p>
+                    <ul class="trainer-card__properties">
+                      <li lang="en">Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="trainer-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
+                    <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                    <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
+
+                    <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+                    <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
+                  </picture>
+                </div>
+              </li>
+              <li class="trainer-card">
+                <div class="trainer-card__info">
+                  <h3>Александр Пашков</h3>
+                  <div class="trainer-card__hidden">
+                    <p lang="en">CrossFit</p>
+                    <ul class="trainer-card__properties">
+                      <li lang="en">Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="trainer-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
+                    <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                    <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
+
+                    <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+                    <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
+                  </picture>
+                </div>
+              </li>
+              <li class="trainer-card">
+                <div class="trainer-card__info">
+                  <h3>Александр Пашков</h3>
+                  <div class="trainer-card__hidden">
+                    <p lang="en">CrossFit</p>
+                    <ul class="trainer-card__properties">
+                      <li lang="en">Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="trainer-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
+                    <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                    <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
+
+                    <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+                    <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
+                  </picture>
+                </div>
+              </li>
+              <li class="trainer-card">
+                <div class="trainer-card__info">
+                  <h3>Александр Пашков</h3>
+                  <div class="trainer-card__hidden">
+                    <p lang="en">CrossFit</p>
+                    <ul class="trainer-card__properties">
+                      <li lang="en">Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="trainer-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
+                    <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                    <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
+
+                    <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+                    <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
+                  </picture>
+                </div>
+              </li>
+              <li class="trainer-card">
+                <div class="trainer-card__info">
+                  <h3>Александр Пашков</h3>
+                  <div class="trainer-card__hidden">
+                    <p lang="en">CrossFit</p>
+                    <ul class="trainer-card__properties">
+                      <li lang="en">Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по <span lang="en">CrossFit</span></li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="trainer-card__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/trainer-mobile@1x.webp 1x, img/trainer-mobile@2x.webp 2x" media="(max-width: 767px)">
+                    <source type="image/webp" srcset="img/trainer-tablet@1x.webp 1x, img/trainer-tablet@2x.webp 2x" media="(max-width: 1199px)">
+                    <source type="image/webp" srcset="img/trainer-desktop@1x.webp 1x, img/trainer-desktop@2x.webp 2x">
+
+                    <source srcset="img/trainer-mobile@1x.jpg 1x, img/trainer-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="img/trainer-tablet@1x.jpg 1x, img/trainer-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+                    <img src="img/trainer-desktop@1x.jpg" srcset="img/trainer-desktop@1x.jpg 1x, img/trainer-desktop@2x.jpg 2x">
+                  </picture>
+                </div>
+              </li>
           </ul>
         </div>
       </div>
@@ -310,7 +456,7 @@
             </p>
             <div class="advantage-unit__description">
               <h3>Площадь</h3>
-              <p>Занимайтесь без очередей и толкучки</p>
+              <p>Занимайтесь без очередей и толпучки</p>
             </div>
           </li>
           <li class="advantage-unit">
@@ -352,6 +498,34 @@
             <p>Современные тренажеры на все группы мышц</p>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="promotions">
+      <div class="promotions__content  content">
+        <h2>Акции</h2>
+        <div class="promotions__offers-container">
+          <article class="promotions__best-offer  best-offer">
+            <h3>
+              <span>Год</span>
+              <span>4999</span>
+            </h3>
+            <p>Безлимитный абонемент в тренажерный зал</p>
+            <a class="best-offer__link" href="#">Подробнее</a>
+          </article>
+          <ul class="promotions__offers">
+            <li class="promotion-offer">
+              <h3>Месяц бесплатно</h3>
+              <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
+              <a class="promotion-offer__link" href="#">Подробнее</a>
+            </li>
+            <li class="promotion-offer">
+              <h3>Скидка 20%</h3>
+              <p>Корпоративный фитнес  с командой</p>
+              <a class="promotion-offer__link" href="#">Подробнее</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>

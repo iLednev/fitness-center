@@ -1,0 +1,87 @@
+.best-offer {
+  padding-top: 41px;
+  padding-right: 326px;
+  padding-bottom: 32px;
+  padding-left: 45px;
+  width: 560px;
+  background-color: #ed0233;
+  background-image: url("../img/slim-woman-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+
+  @include media-tablet {
+    padding-right: 440px;
+    padding-bottom: 43px;
+    width: 678px;
+    background-image: url("../img/slim-woman-tablet@1x.jpg");
+  }
+
+  @include media-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 42px;
+    padding-right: 50px;
+    padding-bottom: 343px;
+    padding-left: 50px;
+    width: 290px;
+    background-image: url("../img/slim-woman-mobile@1x.jpg");
+    background-position: bottom;
+  }
+
+  & h3 {
+    @include text-block-reset;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center;
+
+    & span {
+      color: $text-white;
+      font-family: $roboto;
+      font-weight: 700;
+
+      &:first-child {
+        margin-bottom: 3px;
+        font-size: 28px;
+        line-height: 28px;
+      }
+
+      &:last-child {
+        font-size: 70px;
+        line-height: 70px;
+      }
+    }
+
+    @include media-mobile {
+      margin-bottom: 15px;
+    }
+  }
+
+  & p {
+    @include text-block-reset;
+    margin-bottom: 188px;
+    background-position: right;
+    color: $text-white;
+    font-family: $roboto;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+
+    @include media-mobile {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link {
+    border-bottom: 1px solid $text-white;
+    color: $text-white;
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}

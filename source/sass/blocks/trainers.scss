@@ -27,7 +27,7 @@
     }
   }
 
-  &__slider {
+  &__slider-container {
     position: relative;
   }
 
@@ -92,13 +92,10 @@
 
     & > li {
       flex-shrink: 0;
+      margin-right: 40px;
 
-      &:not(:last-child) {
-        margin-right: 40px;
-
-        @include media-tablet {
-          margin-right: 30px;
-        }
+      @include media-tablet {
+        margin-right: 30px;
       }
     }
   }
