@@ -40,7 +40,7 @@ function checkPageWidth() {
   }
 }
 
-var buttonsContainer = document.querySelector('.js-slider-buttons');
+var buttonsContainer = document.querySelector('.trainers__slider-buttons');
 var slider = document.querySelector('.trainers__list');
 var sliderItems = document.querySelectorAll('.trainer-card');
 var itemMargin = sliderItems[1].offsetLeft - sliderItems[0].offsetWidth;
@@ -64,7 +64,7 @@ var breakpoints = {
 
 checkPageWidth();
 
-window.addEventListener('resize', function (evt) {
+window.addEventListener('resize', function () {
   checkPageWidth();
 });
 

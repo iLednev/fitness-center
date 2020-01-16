@@ -9,6 +9,12 @@
 
     @include media-tablet {
       padding-top: 100px;
+      padding-bottom: 92px;
+    }
+
+    @include media-mobile {
+      padding-top: 70px;
+      padding-bottom: 27px;
     }
   }
 
@@ -19,13 +25,26 @@
     @include media-tablet {
       margin-bottom: 42px;
     }
+
+    @include media-mobile {
+      margin-bottom: 44px;
+    }
   }
 
   &__list {
     @include list-reset;
     position: relative;
-    display: grid;
-    grid-template-columns: 340px 240px 340px;
-    grid-column-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include media-tablet {
+      justify-content: flex-start;
+    }
+
+    @include media-mobile {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
