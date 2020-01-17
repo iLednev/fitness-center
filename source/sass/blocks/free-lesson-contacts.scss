@@ -1,0 +1,8 @@
+.free-lesson-contacts {
+  display: flex;
+
+  @include media-tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}

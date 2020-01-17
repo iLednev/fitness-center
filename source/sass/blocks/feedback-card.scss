@@ -1,0 +1,55 @@
+.feedback-card {
+  flex-shrink: 0;
+  padding-top: 54px;
+  padding-right: 62px;
+  padding-bottom: 57px;
+  padding-left: 170px;
+  width: 100%;
+  transform: translateX(0);
+  background-color: $secondary-dark-blue;
+  background-image: url("../img/feedback-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: 62px 62px;
+
+  color: $text-white;
+  font-family: $roboto;
+  transition-duration: 0.4s;
+
+  @include media-tablet {
+    padding-left: 173px;
+    background-position: 65px 62px;
+  }
+
+  @include media-mobile {
+    padding-top: 48px;
+    padding-right: 25px;
+    padding-bottom: 35px;
+    padding-left: 25px;
+    background-image: url("../img/feedback-mobile@1x.png");
+    background-position: 41px 40px;
+  }
+
+
+  & h3 {
+    @include text-block-reset;
+    margin-bottom: 13px;
+    font-size: 20px;
+    line-height: 30px;
+
+    @include media-mobile {
+      margin-bottom: 24px;
+      padding-left: 100px;
+      line-height: 26px;
+    }
+  }
+
+  & p {
+    @include text-block-reset;
+    font-size: 16px;
+    line-height: 22px;
+
+    @include media-mobile {
+      text-align: center;
+    }
+  }
+}
