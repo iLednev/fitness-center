@@ -35,8 +35,8 @@
     @include list-reset;
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
 
     @include media-tablet {
       justify-content: flex-start;

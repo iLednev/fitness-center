@@ -1,7 +1,7 @@
 'use strict';
 
-var TRAINERSCONTAINER = document.querySelector('.trainers__slider-buttons');
-var FEEDBACKCONTAINER = document.querySelector('.feedback__slider-buttons');
+var TRAINERSCONTAINER = document.querySelector('.trainers__slider-container');
+var FEEDBACKCONTAINER = document.querySelector('.feedback__slider-container');
 
 function GetData(slider, items, arrowClass) {
   this.arrow = {

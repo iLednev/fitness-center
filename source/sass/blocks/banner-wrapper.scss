@@ -1,18 +1,19 @@
 .banner-wrapper {
-  background-image: url("../img/superman-desktop@1x.jpg"), url("../img/bg-banner-desktop@1x.jpg");
+  background-image: url("../img/superman-desktop@1x.jpg"), url("../img/bg-banner-desktop@1x.jpg"), linear-gradient(to top, #1d3376 20%, #671b50 93%), linear-gradient(to top, #7f1445, #b4022a 72%);
   background-repeat: no-repeat;
-  background-position: calc(50% + 130px) calc(50% - 2px), 50% calc(50% - 3px);
+  background-size: auto, auto, 50%, 50%;
+  background-position: calc(50% + 130px) calc(50% - 2px), 50% calc(50% - 3px), left calc(50% - 4px), right calc(50% - 4px);
 
   @media (min-resolution: 1.5dppx) {
-    background-image: url("../img/superman-desktop@2x.jpg"), url("../img/bg-banner-desktop@2x.jpg");
+    background-image: url("../img/superman-desktop@2x.jpg"), url("../img/bg-banner-desktop@2x.jpg"), linear-gradient(to top, #1d3376 20%, #671b50 93%), linear-gradient(to top, #7f1445, #b4022a 72%);
   }
 
   @include media-tablet {
-    background-image: url("../img/superman-tablet@1x.jpg"), url("../img/bg-banner-tablet@1x.jpg");
-    background-position: calc(50% + 177px) calc(50% - 2px), 50% calc(50% - 3px);
+    background-image: url("../img/superman-tablet@1x.jpg"), url("../img/bg-banner-tablet@1x.jpg"), linear-gradient(to top, #1d3376 15%, #552159 93%), linear-gradient(to top, #7f1445, #b4022a 60%);
+    background-position: calc(50% + 177px) calc(50% - 2px), 50% calc(50% - 3px), left calc(50% - 4px), right calc(50% - 4px);
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/superman-tablet@2x.jpg"), url("../img/bg-banner-tablet@2x.jpg");
+      background-image: url("../img/superman-tablet@2x.jpg"), url("../img/bg-banner-tablet@2x.jpg"), linear-gradient(to top, #1d3376 15%, #552159 93%), linear-gradient(to top, #7f1445, #b4022a 72%);
     }
   }
 
