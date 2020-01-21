@@ -89,11 +89,11 @@
         }
       }
 
-      &:first-child {
-        margin-left: 160px;
-      }
-
       @include media-mobile {
+        &:first-child {
+          margin-left: 160px;
+        }
+
         &:not(:first-child) {
           margin-top: 24px;
         }
