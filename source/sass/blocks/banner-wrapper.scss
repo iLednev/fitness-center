@@ -1,7 +1,7 @@
 .banner-wrapper {
   background-image: url("../img/superman-desktop@1x.jpg"), url("../img/bg-banner-desktop@1x.jpg"), linear-gradient(to top, #1d3376 20%, #671b50 93%), linear-gradient(to top, #7f1445, #b4022a 72%);
   background-repeat: no-repeat;
-  background-size: auto, auto, 50%, 50%;
+  background-size: auto, auto, 50% 100%, 50% 100%;
   background-position: calc(50% + 130px) calc(50% - 2px), 50% calc(50% - 3px), left calc(50% - 4px), right calc(50% - 4px);
 
   @media (min-resolution: 1.5dppx) {

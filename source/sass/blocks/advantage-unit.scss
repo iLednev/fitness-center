@@ -216,6 +216,7 @@
     font-family: $roboto;
 
     &:last-of-type {
+      max-width: 250px;
       color: $main-dark-blue;
       font-size: 16px;
       font-weight: 300;
