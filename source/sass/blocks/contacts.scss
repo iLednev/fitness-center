@@ -1,6 +1,6 @@
 .contacts {
   width: 50%;
-  border-top: 1px solid #74819c;
+  box-shadow: inset 0 1px 0 0 #74819c;
 
   @include media-tablet {
     width: 100%;

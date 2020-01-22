@@ -15,7 +15,6 @@ var svgstore = require('gulp-svgstore');
 var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var del = require('del');
-var uglify = require('gulp-uglify');
 var concat = require("gulp-concat");
 
 gulp.task('clean', function () {
@@ -58,7 +57,6 @@ gulp.task('js', function () {
   return gulp.src('source/js/*.js')
     .pipe(sourcemap.init())
       .pipe(concat('script.js'))
-      .pipe(uglify())
     .pipe(sourcemap.write('.'))
     .pipe(gulp.dest('build/js'));
 });

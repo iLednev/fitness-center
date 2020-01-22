@@ -23,6 +23,7 @@
     margin-bottom: 50px;
 
     @include media-tablet {
+      margin-right: 0;
       margin-bottom: 40px;
     }
 
