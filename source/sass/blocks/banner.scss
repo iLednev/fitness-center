@@ -98,7 +98,7 @@
   &__areas {
     @include list-reset;
     position: absolute;
-    bottom: 26px;
+    top: 125px;
     left: -80px;
     width: 113px;
     color: $text-white;
@@ -110,12 +110,12 @@
     letter-spacing: 0.1px;
 
     @include media-tablet {
-      bottom: 17px;
+      top: 93px;
       left: -90px;
     }
 
     @include media-mobile {
-      bottom: 11px;
+      top: 82px;
       left: 0;
     }
   }

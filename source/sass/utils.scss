@@ -32,6 +32,10 @@ main {
   flex: 0 0 auto;
 }
 
+.abonements-wrapper {
+  overflow: hidden;
+}
+
 .content {
   @include desktop-paddings;
   display: flex;

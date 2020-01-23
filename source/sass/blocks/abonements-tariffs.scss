@@ -1,43 +1,55 @@
 .abonements-tariffs {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   position: relative;
+  min-width: 1160px;
   z-index: 1;
 
   @include media-tablet {
     flex-direction: column;
+    min-width: auto;
   }
 
-  //&::before {
-  //  content: "";
-  //  position: absolute;
-  //  right: -239px;
-  //  bottom: -225px;
-  //  width: 470px;
-  //  height: 494px;
-  //  background-image: url("../img/bg-weight-plates-desktop@1x.png");
-  //  z-index: -1;
-  //
-  //  @media (min-resolution: 1.5dppx) {
-  //    background-image: url("../img/bg-weight-plates-desktop@2x.png");
-  //  }
-  //
-  //  @include media-tablet {
-  //    width: 423px;
-  //    height: 444px;
-  //    background-image: url("../img/bg-weight-plates-tablet@1x.png");
-  //
-  //    @media (min-resolution: 1.5dppx) {
-  //      background-image: url("../img/bg-weight-plates-tablet@2x.png");
-  //    }
-  //  }
-  //}
+  &::before {
+    content: "";
+    position: absolute;
+    right: -286px;
+    bottom: -269px;
+    width: 470px;
+    height: 494px;
+    background-image: url("../img/bg-weight-plates-desktop@1x.png");
+    background-size: 100%;
+    z-index: -1;
+    transform: translateX(0);
+    overflow: hidden;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-weight-plates-desktop@2x.png");
+    }
+
+    @include media-tablet {
+      right: -239px;
+      bottom: -223px;
+      width: 423px;
+      height: 444px;
+      background-image: url("../img/bg-weight-plates-tablet@1x.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/bg-weight-plates-tablet@2x.png");
+      }
+    }
+
+    @include media-mobile {
+      display: none;
+    }
+  }
 
   &.hidden {
     display: none;
   }
 
-  & li:not(:last-child) {
+  & li:not(:nth-child(3n)) {
     margin-right: 40px;
 
     @include media-tablet {
@@ -48,5 +60,9 @@
     @include media-mobile {
       margin-bottom: 35px;
     }
+  }
+
+  & li:not(:nth-child(-n + 3)) {
+    margin-top: 25px;
   }
 }

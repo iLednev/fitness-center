@@ -1,7 +1,7 @@
 .banner-wrapper {
   background-image: url("../img/superman-desktop@1x.jpg"), url("../img/bg-banner-desktop@1x.jpg"), linear-gradient(to top, #1d3376 20%, #671b50 93%), linear-gradient(to top, #7f1445, #b4022a 72%);
   background-repeat: no-repeat;
-  background-size: auto, auto, 50% 100%, 50% 100%;
+  background-size: 500px 556px, 1366px 658px, 50% 100%, 50% 100%;
   background-position: calc(50% + 130px) calc(50% - 2px), 50% calc(50% - 3px), left calc(50% - 4px), right calc(50% - 4px);
 
   @media (min-resolution: 1.5dppx) {
@@ -10,6 +10,7 @@
 
   @include media-tablet {
     background-image: url("../img/superman-tablet@1x.jpg"), url("../img/bg-banner-tablet@1x.jpg"), linear-gradient(to top, #1d3376 15%, #552159 93%), linear-gradient(to top, #7f1445, #b4022a 60%);
+    background-size: 324px 390px, 1024px 554px, 50% 100%, 50% 100%;
     background-position: calc(50% + 177px) calc(50% - 2px), 50% calc(50% - 3px), left calc(50% - 4px), right calc(50% - 4px);
 
     @media (min-resolution: 1.5dppx) {
@@ -19,6 +20,7 @@
 
   @include media-mobile {
     background-image: url("../img/bg-banner-mobile@1x.jpg");
+    background-size: 768px 491px;
     background-position: 50% calc(50% - 3px);
 
     @media (min-resolution: 1.5dppx) {
