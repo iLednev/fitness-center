@@ -25,7 +25,6 @@ switchesList.addEventListener('click', function (evt) {
   }
 });
 
-'use strict';
 
 'use strict';
 
@@ -203,4 +202,4 @@ inputTel.addEventListener('input', function () {
   }
 });
 
-//# sourceMappingURL=script.js.map
+//# sourceMappingURL=main.js.map

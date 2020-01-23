@@ -56,7 +56,7 @@ gulp.task('css', function () {
 gulp.task('js', function () {
   return gulp.src('source/js/*.js')
     .pipe(sourcemap.init())
-      .pipe(concat('script.js'))
+      .pipe(concat('main.js'))
     .pipe(sourcemap.write('.'))
     .pipe(gulp.dest('build/js'));
 });
