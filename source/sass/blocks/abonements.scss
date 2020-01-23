@@ -1,5 +1,5 @@
 .abonements {
-  padding-top: 117px;
+  padding-top: 121px;
   padding-bottom: 120px;
   background-color: #f8f9fc;
 
@@ -20,7 +20,7 @@
 
   & h2 {
     @include h2-heading;
-    margin-bottom: 36px;
+    margin-bottom: 33px;
     width: 226px;
 
     @include media-tablet {

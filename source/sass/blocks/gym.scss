@@ -19,7 +19,7 @@
       padding-bottom: 179px;
       background-image: url("../img/gym-tablet@1x.jpg");
       background-size: 678px 345px;
-      background-position: 50% 324px;
+      background-position: 50% calc(100% - 183px);
 
       @media (min-resolution: 1.5dppx) {
         background-image: url("../img/gym-tablet@2x.jpg");
@@ -33,7 +33,7 @@
       padding-bottom: 66px;
       background-image: url("../img/gym-mobile@1x.jpg");
       background-size: 320px 313px;
-      background-position: 50% 335px;
+      background-position: 50% calc(100% - 273px);
 
       @media (min-resolution: 1.5dppx) {
         background-image: url("../img/gym-mobile@2x.jpg");
@@ -153,6 +153,31 @@
     width: 364px;
     height: 228px;
     background-image: url("../img/gym-video-desktop@1x.jpg");
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 100px;
+      height: 100px;
+      background-image: url("../img/svg/play.svg");
+      background-size: cover;
+
+      transition-duration: 0.2s;
+    }
+
+    &:hover::before {
+      width: 110px;
+      height: 110px;
+    }
+
+    &:active::before {
+      opacity: 0.7;
+    }
+
 
     @media (min-resolution: 1.5dppx) {
       background-size: cover;
@@ -164,7 +189,8 @@
     }
 
     @include media-tablet {
-      top: 585px;
+      top: auto;
+      bottom: 100px;
       left: 50%;
       width: 266px;
       height: 167px;

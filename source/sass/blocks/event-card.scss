@@ -2,18 +2,19 @@
   display: flex;
   background-color: #000145;
   background-image: url("../img/explode-desktop@1x.jpg");
+  background-size: 660px 500px;
   background-position: right;
   background-repeat: no-repeat;
   width: 1160px;
 
   @media (min-resolution: 1.5dppx) {
-    background-size: cover;
     background-image: url("../img/explode-desktop@2x.jpg");
   }
 
   @include media-tablet {
     width: 678px;
     background-image: url("../img/explode-tablet@1x.jpg");
+    background-size: 386px 292px;
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/explode-tablet@2x.jpg");
@@ -25,6 +26,7 @@
     min-height: 584px;
     background-color: #ed0233;
     background-image: url("../img/explode-mobile@1x.jpg");
+    background-size: 290px 292px;
     background-position: bottom;
 
     @media (min-resolution: 1.5dppx) {

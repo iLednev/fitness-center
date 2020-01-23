@@ -5,13 +5,19 @@
   cursor: pointer;
   transform: translateX(0);
 
+  @media (max-width: 1300px) {
+    width: 240px;
+    height: 270px;
+  }
+
   @include media-tablet {
     width: 268px;
+    height: 294px;
   }
 
   @include media-mobile {
     width: 226px;
-    height: 274px;
+    height: 284px;
   }
 
   &__info {
@@ -26,7 +32,15 @@
     width: 260px;
     height: 294px;
 
+    @media (max-width: 1300px) {
+      padding-top: 47px;
+      padding-left: 32px;
+      padding-right: 34px;
+      width: 240px;
+    }
+
     @include media-tablet {
+      padding-top: 57px;
       width: 268px;
     }
 

@@ -52,7 +52,6 @@
     @include list-reset;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     position: relative;
 
     @include media-tablet {
@@ -68,7 +67,7 @@
     &::before {
       content: "";
       position: absolute;
-      left: 50%;
+      left: calc(50% + 5px);
       top: 5px;
       width: 1px;
       height: 100%;
@@ -96,6 +95,15 @@
 
       @include media-mobile {
         width: 290px;
+      }
+
+      &:nth-child(2n + 1) {
+        margin-left: 5px;
+        margin-right: 120px;
+      }
+
+      &:nth-child(2n) {
+        width: 165px;
       }
 
       &:not(:nth-child(-n + 2)) {
@@ -136,6 +144,11 @@
         font-size: 18px;
         line-height: 27px;
       }
+    }
+
+    & a {
+      color: $main-dark-blue;
+      text-decoration: none;
     }
   }
 }
