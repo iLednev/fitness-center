@@ -149,9 +149,15 @@
         font-size: 71px;
         font-weight: 700;
         line-height: 64px;
-        background: linear-gradient(135.54deg, #d10a42 0%, #0041ca 87.33%);
+        background: url("../img/text-gradient.png");
         background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          background: none;
+          background-clip: content-box;
+          -webkit-text-fill-color: $text-white;
+        }
 
         @include media-tablet {
           font-size: 58px;

@@ -26,29 +26,15 @@ function checkClass(element, className) {
   return element.classList.contains(className);
 }
 
-function checkPageWidth() {
-  var newPageStatus = '';
-  if (window.outerWidth >= breakpoints.desktopFull) {
-    newPageStatus = 'desktopFull';
-  } else if (window.outerWidth <= breakpoints.tabletFull && window.outerWidth > breakpoints.tabletClipped) {
-    newPageStatus = 'tabletFull';
-  } else if (window.outerWidth <= breakpoints.tabletClipped && window.outerWidth > breakpoints.mobile) {
-    newPageStatus = 'tabletClipped';
-  } else if (window.outerWidth <= breakpoints.mobile) {
-    newPageStatus = 'mobile';
-  }
-
-  if (newPageStatus !== pageStatus) {
-    pageStatus = newPageStatus;
-    feedback = new GetData(feedbackSlider, feedbackItems, 'feedback__arrow', feedbackWrapper);
-    resetCards(feedback, feedback.sliderItems);
-    trainers = new GetData(trainersSlider, trainersItems, 'trainers__arrow', trainersWrapper);
-    resetCards(trainers, trainers.sliderItems);
-  }
+function refreshObj() {
+  feedback = new GetData(feedbackSlider, feedbackItems, 'feedback__arrow', feedbackWrapper);
+  resetCards(feedback, feedback.sliderItems);
+  trainers = new GetData(trainersSlider, trainersItems, 'trainers__arrow', trainersWrapper);
+  resetCards(trainers, trainers.sliderItems);
 }
 
 function resetCards(sliderObj) {
-  sliderObj.slider.style.transform = 'translateX(' + sliderObj.shift + 'px)';
+  sliderObj.slider.style.transform = 'translateX(0)';
 }
 
 function switchSlider(sliderObj, target) {
@@ -70,18 +56,11 @@ var trainersItems = document.querySelectorAll('.trainer-card');
 var feedbackItems = document.querySelectorAll('.feedback-card');
 var feedback = new GetData(feedbackSlider, feedbackItems, 'feedback__arrow', feedbackWrapper);
 var trainers = new GetData(trainersSlider, trainersItems, 'trainers__arrow', trainersWrapper);
-var pageStatus = '';
-var breakpoints = {
-  desktopFull: 1366,
-  tabletFull: 1199,
-  tabletClipped: 1023,
-  mobile: 767
-};
 
-checkPageWidth();
+refreshObj();
 
 window.addEventListener('resize', function () {
-  checkPageWidth();
+  refreshObj();
 });
 
 TRAINERSCONTAINER.addEventListener('click', function (evt) {
